@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Student Data Dapp</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-push-2">
+        <h1 class="text-center">Student Data Dapp</h1>
+        <hr />
+        <br />
+      </div>
+    </div>
+
+    <div id="petsRow" align="center">
+
+      <input type="text" id="sid" placeholder="Studnet ID" size="60" />
+      <br>
+      <br>
+      <input type="text" id="sname" placeholder="Studnet Name" size="60" />
+      <br>
+      <br>
+      <input type="text" id="cname" placeholder="Course Name" size="60" />
+      <br>
+      <br>
+      <input type="submit" value="Submit Data" id="enter" onclick="App.enterData()" />
+
+      <input type="Submit" id="show" value="Show Data" onclick="App.showData()">
+
+    </div>
+
+    <br>
+    <br>
+
+    <div align="center">
+      <table border=2px solid black>
+        <tr>
+          <th style="padding: 10px;">Student ID</th>
+          <th style="padding: 10px;">Student Name</th>
+          <th style="padding: 10px;">Course Name</th>
+        </tr>
+        <tr>
+          <td id="a" style="padding: 10px;"></td>
+          <td id="b" style="padding: 10px;"></td>
+          <td id="c" style="padding: 10px;"></td>
+        </tr>
+
+
+      </table>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
